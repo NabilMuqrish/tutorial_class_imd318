@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascripts</title>
+	<iframe src="https://free.timeanddate.com/clock/ia6uv4qf/n122/tlmy/fn11/fs15/bas3/bac009/tt0/tw0/tm1/ts1/tb4" frameborder="0" width="81" height="44"></iframe>
+
+</head>
+<body>
+
+	<h2>Javascripts change content</h2>
+
+	<p id="content1">I am using Javascripts to change this content</p>
+
+	<button type="button" onclick='document.getElementById("content1").innerHTML="This is my second sentence. I use Javascripts to change it"'>Click Here</button>
+
+	<h2>Javascripts change the style</h2>
+
+	<p id="style1">I am using Javascripts to change the style of this content</p>
+
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style1").style.fontSize="45px";
+			document.getElementById("style1").style.color="Blue";
+			document.getElementById("style1").style.fontFamily="Sans Serif";
+			document.getElementById("style1").style.backgroundColor="Yellow";
+		}
+	</script>
+
+	<button type="button" onclick="myStyle()">Click Here</button>
+
+	<h2>Javascripts do Image Manipulation</h2>
+
+	<script>
+		function myimage(a)
+		{
+			var pict; 
+			if (a==1)
+			{
+				pict="image/boat.jpg"
+			}
+			else
+			{
+				pict="image/gif image.gif"
+			}
+			document.getElementById('image1').src=pict;
+		}
+	</script>
+
+	<img src="image/boat.jpg" width="200" height="200" id="image1">
+
+	<p>
+		<button type="button" onclick="myimage(1)">Image A</button>
+		<button type="button" onclick="myimage(2)">Image B</button>
+	</p>
+
+	<h2>Alert Box</h2>
+
+	<script>
+		{
+			alert("GOOD MORNING")
+		}
+	</script>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.694772963497!2d102.27092387498666!3d5.756997594225392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sKampus%20UiTM%20Machang!5e0!3m2!1sms!2smy!4v1765179658679!5m2!1sms!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+</body>
+</html>
